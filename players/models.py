@@ -9,3 +9,5 @@ class Palyer(models.Model):
     height = models.FloatField(verbose_name="Altura")
     weight = models.FloatField(verbose_name="Peso")
     age = models.IntegerField(verbose_name="Idade")
+    created_at = models.DateField(auto_now_add=True)
+    updated_at = models.DateField(auto_now=True)
