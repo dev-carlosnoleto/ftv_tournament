@@ -1,0 +1,19 @@
+{% extends "global/base-auth.html" %}
+
+{% block title %}Escolher Registro{% endblock %}
+{% block heading %}Como deseja se registrar?{% endblock %}
+
+{% block content %}
+<div class="d-grid gap-3">
+    <a href="{% url "render_register_manager" %}" class="btn btn-outline-primary btn-lg">
+        Sou uma Organização
+    </a>
+    <a href="{% url "render_register_player" %}" class="btn btn-outline-primary btn-lg">
+        Sou um Jogador
+    </a>
+</div>
+
+<div class="mt-4 text-center">
+    <small>Já tem conta? <a href="">Entrar</a></small>
+</div>
+{% endblock %}
