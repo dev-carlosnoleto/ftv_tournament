@@ -3,6 +3,6 @@ from accounts import views
 
 urlpatterns = [
     path('choice-register', views.choice_register, name="choice_register"),
-    path('register/manager', views.render_register_manager, name="render_register_manager"),
-    path('register/player', views.render_register_player, name="render_register_player"),
+    path('register/manager', views.register_manager, name="register_manager"),
+    path('login', views.login, name='login')
 ]
