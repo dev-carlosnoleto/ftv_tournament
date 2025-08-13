@@ -8,12 +8,12 @@
     <a href="{% url "register_manager" %}" class="btn btn-outline-primary btn-lg">
         Sou uma Organização
     </a>
-    <a href="" class="btn btn-outline-primary btn-lg">
+    <a href="{% url "register_player" %}" class="btn btn-outline-primary btn-lg">
         Sou um Jogador
     </a>
 </div>
 
 <div class="mt-4 text-center">
-    <small>Já tem conta? <a href="">Entrar</a></small>
+    <small>Já tem conta? <a href="{% url "login" %}">Entrar</a></small>
 </div>
 {% endblock %}
